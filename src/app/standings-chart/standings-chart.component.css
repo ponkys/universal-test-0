@@ -1,0 +1,28 @@
+.chart__wrapper {
+    max-width: 720px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 20px auto 0;
+}
+
+.chart__full {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+    padding: 12px;
+    border: 1px solid aliceblue;
+    overflow-x: scroll;
+}
+
+.chart__full--transparency {
+    background-color: rgba(240,248,255,0.8);
+}
+
+.chart__full--title {
+    color: #f1f4f7;
+    background-color: #32b847;
+    text-align: center;
+}
+
+.chart__info--data {
+    text-align: right;
+}

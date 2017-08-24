@@ -1,0 +1,16 @@
+<div class="chart__wrapper">
+  <div #rowTitle class="chart__full chart__full--title">
+    <h3 >Team</h3>
+    <h3>Points</h3>
+    <h3>Match Played</h3>
+    <h3>Goal Difference</h3>
+  </div>
+  <ng-container *ngFor="let data of standings; let i = index">
+    <div class="chart__full {{i}}" [ngClass]="{'chart__full--transparency': i % 2 === 1}">
+      <p>{{data.team.name}}</p>
+      <p class="chart__info--data">{{data.team.teamstats.points}}</p>
+      <p class="chart__info--data">{{data.team.teamstats.played}}</p>
+      <p class="chart__info--data">{{data.team.teamstats.diff}}</p>
+    </div>
+  </ng-container>
+</div>
