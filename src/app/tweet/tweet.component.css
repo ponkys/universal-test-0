@@ -1,0 +1,27 @@
+.card {
+    align-items: left;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 720px;
+    padding: 12px;
+}
+
+.card--light {
+    background-color: #f0f2f5;    
+    transition: background-color 300ms ease-in-out;
+    -webkit-transition: background-color 300ms ease-in-out; /* Safari */
+}
+
+.card--light:hover {
+    background-color: #d1d7e1;
+}
+
+.card__twitter-logo {
+    background-image: url('/assets/images/logo_twitter_LR.png');
+    width: 15px;
+    height: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

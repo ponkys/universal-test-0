@@ -1,0 +1,15 @@
+<div
+  class="card card-{{index}}"
+  [ngClass]="{
+    'card--dark': item.content_type === 'native_article',
+    'card--light': item.content_type === 'twitter'
+  }">
+  <div class="card__img">
+    <div 
+      class="card__img__src card__img-{{index}}"
+      [ngStyle]="{'background-image': image}"></div>
+  </div>
+  <div class="card__title-area">
+    <h3 class="card__title-area__title">{{item.title}}</h3>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="feed-list">
+  <h1 class="feed-list__title">Native Article Feed</h1>
+  <div
+    *ngFor="let item of nativeFeed; let i = index">
+    <app-native-article
+      [index]="i"
+      [item]="item">
+    </app-native-article>
+  </div>
+</div>
+<div class="feed-list">
+  <h1 class="feed-list__title">Twitter Feed</h1>
+  <div
+    *ngFor="let item of twitterFeed">
+    <app-tweet
+      [item]="item">
+    </app-tweet>
+  </div>
+</div>
+<div class="feed-list">
+  <h1 class="feed-list__title">Conditional rendering Feed</h1>
+  <div
+    *ngFor="let item of feed; let i = index">
+    <!-- Syntax for ngIf/Else throws and error / investigate -->
+    <app-native-article
+      *ngIf="item.content_type === 'native_article'"
+      [index]="i"
+      [item]="item">
+    </app-native-article>
+    <app-tweet
+      *ngIf="item.content_type === 'twitter'"
+      [item]="item">
+    </app-tweet>
+  </div>
+</div>
