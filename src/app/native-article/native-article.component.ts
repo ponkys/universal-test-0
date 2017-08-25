@@ -16,7 +16,7 @@ export class NativeArticleComponent implements OnInit {
   constructor(private resourceService: ResourceService) { }
 
   ngOnInit() {
-    this.image = this.resourceService.getImage(this.index, this.item.images.large);
+    this.image = this.resourceService.getImage(this.item.images.large);
   }
 
 }

@@ -5,7 +5,7 @@ export class ResourceService {
 
   constructor() {}
 
-  getImage(index, path): string {
+  getImage(path): string {
     let res = '';
     if (path !== '') {
         res = `url(${path})`;

@@ -16,10 +16,10 @@ describe('TweetComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TweetComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should be created', async(() => {
     expect(component).toBeTruthy();
-  });
+  }));
+
 });

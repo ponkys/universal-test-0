@@ -9,7 +9,7 @@ export interface Item {
     link: string;
     my_stream_item_id: string;
     publish_time: string;
-    related_entities: any[];
+    related_entities: any;
     related_items: any;
     share_link: string;
     tags: any;

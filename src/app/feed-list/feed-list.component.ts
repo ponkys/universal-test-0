@@ -25,14 +25,15 @@ export class FeedListComponent implements OnInit {
     meta.addTags([
       {
         name: 'author', content: 'Diego M. Mosquera'
-      },
-      {
+      }
+    ]);
+    meta.updateTag({
         name: 'keywords', content: 'angular universal, test, OneFootball, Web Engineer'
-      },
-      {
+    });
+    meta.updateTag({
         name: 'description', content: 'OneFootball test for Web Enginneer vacancy!'
       },
-    ]);
+    );
   }
 
   ngOnInit() {

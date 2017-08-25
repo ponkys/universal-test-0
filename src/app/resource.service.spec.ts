@@ -12,4 +12,10 @@ describe('ResourceService', () => {
   it('should be created', inject([ResourceService], (service: ResourceService) => {
     expect(service).toBeTruthy();
   }));
+
+  it('should return modified string', inject([ResourceService], (service: ResourceService) => {
+    const result = 'url(link.jpg)';
+    const link = 'link.jpg';
+    expect(service.getImage(link)).toEqual(result);
+  }));
 });
