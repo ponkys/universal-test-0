@@ -8,5 +8,6 @@ import { Item } from '../models/item';
 })
 export class TweetComponent {
   @Input() item: Item;
+  @Input() conditional = false;
 
 }

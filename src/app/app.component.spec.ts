@@ -21,7 +21,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should render `Feed` in the first p tag tag', async(() => {
+  it('should render \'Feed\' in the first p tag tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;

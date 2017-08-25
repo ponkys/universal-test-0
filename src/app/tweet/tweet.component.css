@@ -3,9 +3,15 @@
     border-radius: 6px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     max-width: 720px;
     padding: 12px;
+    height: 20vh;
+    margin-bottom: 12px;
+}
+
+.card--conditional {
+    height: 100%;
 }
 
 .card--light {

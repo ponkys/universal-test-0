@@ -1,4 +1,3 @@
-/* @supports(grid-area:  auto;) { */
     .chart__wrapper {
         max-width: 720px;
         padding-left: 12px;
@@ -27,4 +26,3 @@
     .chart__info--data {
         text-align: right;
     }
-/* } */

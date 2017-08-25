@@ -1,4 +1,6 @@
-<div class="card card--light">
+<div
+  class="card card--light"
+  [ngClass]="{'card--conditional': conditional}">
   <div class="card__text-area">
     <p class="card__text__title">{{item.content}}</p>
   </div>

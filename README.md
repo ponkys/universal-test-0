@@ -6,6 +6,8 @@ So please, make sure you are running the latest angular CLI before starting.
 
 ## Running Universal app
 
+If your are running the app for the first time run `ng serve` before.
+
 Run `npm run start` to compile and run the server app. Navigate to `http://localhost:4000/`.
 
 this command also generates the client app in production.
