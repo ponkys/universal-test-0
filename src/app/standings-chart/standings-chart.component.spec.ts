@@ -100,14 +100,14 @@ describe('StandingsChartComponent', () => {
       expect(service.get).toHaveBeenCalled();
     }));
 
-  it('Should render team name: `Kashima Antlers`', async(() => {
+  it('Should render team name: \'Kashima Antlers\'', async(() => {
     const team = 'Kashima Antlers';
     const compiled = fixture.debugElement.nativeElement;
 
     expect(compiled.querySelector('p').textContent).toContain(team);
   }));
 
-  it('Should render points `46`', async(() => {
+  it('Should render points \'46\'', async(() => {
     const points = '46';
     const compiled = fixture.debugElement.nativeElement;
 

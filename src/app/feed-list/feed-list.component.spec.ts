@@ -141,7 +141,7 @@ describe('FeedListComponent', () => {
         expect(service.get).toHaveBeenCalled();
     }));
 
-    it('Should render team name: `Kashima Antlers`', async(() => {
+    it('Should render title \'Native Article Feed\'', async(() => {
         const firstTitle = 'Native Article Feed';
         const compiled = fixture.debugElement.nativeElement;
 
