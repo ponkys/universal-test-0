@@ -53,7 +53,7 @@ Finally, the test suite provides basic coverage of every component.
         |       |
         |       |-app.server.ts
         |       |
-        |       |-fedd-list/
+        |       |-fedd-list/                        ** Main component for Feed
         |       |       |
         |       |       |-feed-list.component.css
         |       |       |
@@ -93,7 +93,7 @@ Finally, the test suite provides basic coverage of every component.
         |       |       |
         |       |       |-standings.service.ts
         |       |
-        |       |-standings-chart/
+        |       |-standings-chart/                    ** Main component for standings
         |       |       |
         |       |       |-standings-chart.component.css
         |       |       |
@@ -139,7 +139,7 @@ Finally, the test suite provides basic coverage of every component.
         |
         |-polyfills.ts
         |
-        |-server.ts
+        |-server.ts                                     ** server that gets every request and sends angular app.
         |
         |-styles.css
         |
@@ -154,9 +154,9 @@ Finally, the test suite provides basic coverage of every component.
 
 ## Running Universal app
 
-If your are running the app for the first time run `ng serve` before.
+Important: If your are running the app for the first time run `ng serve` before.
 
-Run `npm run start` to compile and run the server app. Navigate to `http://localhost:4000/`.
+Run `npm run start` to compiles the app and runs the server app. Navigate to `http://localhost:4000/`.
 
 this command also generates the client app in production.
 
@@ -168,18 +168,8 @@ Run `ng serve` and navigate to `http://localhost:4200/`.
 
 Run `ng generate component component-name --module=app.module.ts` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum`.
 
-
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-
-# APP structure
-
-write
+## 

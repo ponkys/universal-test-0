@@ -34,14 +34,14 @@ export class StandingsChartComponent implements OnInit {
     this.standingsService.get()
       .subscribe(
         res => {
-        let data: Standings[];
-        data = res['groups'][0]['ranking'];
-        // sort by highest points
-        this.standings = data.sort((a, b) => {
-          const first = a.team.teamstats.points;
-          const second = b.team.teamstats.points;
-          return (first > second) ? -1 : (first > second) ? 1 : 0;
-        });
+          let data: Standings[];
+          data = res['groups'][0]['ranking'];
+          // sort teams by highest points
+          this.standings = data.sort((a, b) => {
+            const first = a.team.teamstats.points;
+            const second = b.team.teamstats.points;
+            return (first > second) ? -1 : (first > second) ? 1 : 0;
+          });
         },
         (err: HttpErrorResponse) => {
           if (err.error instanceof Error) {
